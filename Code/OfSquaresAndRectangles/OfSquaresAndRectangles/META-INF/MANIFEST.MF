@@ -1,0 +1,40 @@
+Manifest-Version: 1.0
+Build-Date: 2024-02-04
+Build-Revision: 4c0dddad1b96d4a20e92a2cd583954643ac56ac0 
+Build-Time: 09:34:27.111+0100
+Built-By: JUnit Team
+Bundle-ManifestVersion: 2
+Bundle-Name: JUnit Jupiter Params
+Bundle-SymbolicName: junit-jupiter-params
+Bundle-Version: 5.10.2
+Created-By: 17.0.9 (BellSoft 17.0.9+11-LTS)
+Export-Package: org.junit.jupiter.params;version="5.10.2";status=STABL
+ E;uses:="org.apiguardian.api,org.junit.jupiter.api,org.junit.jupiter.
+ api.extension",org.junit.jupiter.params.aggregator;version="5.10.2";s
+ tatus=STABLE;uses:="kotlin,org.apiguardian.api,org.junit.jupiter.api.
+ extension,org.junit.platform.commons",org.junit.jupiter.params.conver
+ ter;version="5.10.2";status=STABLE;uses:="org.apiguardian.api,org.jun
+ it.jupiter.api.extension,org.junit.jupiter.params.support,org.junit.p
+ latform.commons",org.junit.jupiter.params.provider;version="5.10.2";s
+ tatus=STABLE;uses:="org.apiguardian.api,org.junit.jupiter.api.extensi
+ on,org.junit.jupiter.params.support,org.junit.platform.commons",org.j
+ unit.jupiter.params.support;version="5.10.2";status=STABLE;uses:="org
+ .apiguardian.api"
+Implementation-Title: junit-jupiter-params
+Implementation-Vendor: junit.org
+Implementation-Version: 5.10.2
+Import-Package: org.apiguardian.api;resolution:=optional;version="[1.1
+ ,2)",kotlin;resolution:=optional,kotlin.jvm.internal;resolution:=opti
+ onal,org.junit.jupiter.api;version="[5.10,6)",org.junit.jupiter.api.e
+ xtension;version="[5.10,6)",org.junit.jupiter.params.aggregator;versi
+ on="[5.10,6)",org.junit.jupiter.params.converter;version="[5.10,6)",o
+ rg.junit.jupiter.params.support;version="[5.10,6)",org.junit.platform
+ .commons;version="[1.10,2)",org.junit.platform.commons.function;versi
+ on="[1.10,2)",org.junit.platform.commons.support;version="[1.10,2)",o
+ rg.junit.platform.commons.util;version="[1.10,2)",org.junit.platform.
+ commons.logging;status=INTERNAL;version="[1.10,2)"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Specification-Title: junit-jupiter-params
+Specification-Vendor: junit.org
+Specification-Version: 5.10.2
+
