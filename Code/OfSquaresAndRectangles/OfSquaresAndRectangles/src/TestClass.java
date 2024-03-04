@@ -11,9 +11,20 @@ import org.junit.runners.Parameterized.Parameters;
 @RunWith(Parameterized.class)
 class TestClass {
 	
+	public void Rettangolo_ZeroHeight_AreaIsZero() {
+		// Arrange
+		Rettangolo sut = new Rettangolo(0, 11);
+		
+		// Act
+		double area = sut.calcArea();
+		
+		// Assert
+		Assertions.assertEquals(0, area);
+	}
+	
 	@ParameterizedTest
 	@MethodSource("instancesToTest")
-	public void test(ASquaredShape _sut) {
+	public void SquaredShaped_DoubleHeight_AreaIsDoubled(ASquaredShape _sut) {
 		// Arrange
 		double areaBefore = _sut.calcArea();
 		_sut.setHeight(_sut.getHeight() * 2);
