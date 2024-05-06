@@ -18,6 +18,9 @@ public class InMemoryDb implements IDb {
 	
 	@Override
 	public void updateBirth(int key, int age) {
+		
+		// ADAPTER between the *contract* updateBirth, and the actual implementation,
+		// which is based on Dictionary<Integer, Integer>
 		this._db.remove(key);
 		this._db.put(key, age);
 		

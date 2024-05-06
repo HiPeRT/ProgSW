@@ -52,6 +52,7 @@ public class UnitTestingMain {
 		}
 		catch (NullPointerException e) {
 			success = true;
+			System.out.println("[TestThatThrowsException] success!");
 		}
 		
 		// Assert
