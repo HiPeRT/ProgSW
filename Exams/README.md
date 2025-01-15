@@ -1,3 +1,9 @@
+# Scritto 13 Gennaio 2025
+
+| Matricola | Crocette | D9 | D10 | Esito | Voto | Note                     |
+|-----------|----------|----|-----|-------|------|--------------------------|
+| 168972    |          |    |     |       | ASS  | Assente non giustificato |
+
 # Scritto 13 Settembre 2024
 
 | Matricola | Crocette | D9 | D10 | Esito | Voto | Note             |
