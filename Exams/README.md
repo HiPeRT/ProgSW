@@ -1,3 +1,15 @@
+# Scritto 29 Gennaio 2025
+| Matricola | Crocette | D9 | D10 | Esito | Voto | Note             |
+|-----------|----------|----|-----|-------|------|------------------|
+| 176918    | 11.5     | 6  | 4   | 21.5  | 22   |                  |
+| 179981    | 8.5      |    |     | 8.5   | INS  |                  |
+| 131479    | 7.5      |    |     | 7.5   | INS  |                  |
+| 166122    |          |    |     | 0     | RIT  |                  |
+| 158700    |          |    |     | 0     | RIT  |                  |
+| 166300    | 9        | 6  | 2   | 17    | 17   | Necessario orale |
+| 180530    |          |    |     | 0     |      |                  |
+
+
 # Scritto 13 Gennaio 2025
 
 | Matricola | Crocette | D9 | D10 | Esito | Voto | Note                     |
