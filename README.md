@@ -14,6 +14,6 @@ This is official repository of the course of Software design LT, Year 2024/25, a
 ## Folder structure
 
 - Code/ --> Code snippets & tutorials
-- Exams/ --> Past exams (with solutions)
+- Exams/ --> Past exams (with solutions) IS COMING SOON
 - Seminars/ --> Meet the companies
 - Slides/ --> Course slides
