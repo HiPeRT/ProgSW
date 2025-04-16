@@ -2,8 +2,9 @@
 {
     /// <summary>
     /// This class handles the status of a Rectangle
+    /// TODO add Interface
     /// </summary>
-    public class Rectangle
+    public class Rectangle : IRectangle
     {
         private double _height;
         private double _width;
@@ -18,19 +19,11 @@
             this._width = width;
         }
 
-        /// <summary>
-        /// Returns the width of a Rectangle
-        /// </summary>
-        /// <returns></returns>
         public virtual double GetWidth()
         {
             return this._width;
         }
 
-        /// <summary>
-        /// Returns the height of a Rectangle
-        /// </summary>
-        /// <returns></returns>
         public virtual double GetHeight()
         {
             return this._height;

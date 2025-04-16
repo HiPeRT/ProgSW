@@ -5,7 +5,7 @@
     /// </summary>
     public class CalculatorWithOptimization : Calculator
     {
-        public override double CalcArea(Rectangle r)
+        public override double CalcArea(IRectangle r)
         {
             if (r.GetWidth() == 0.0) return 0.0;
             if (r.GetHeight() == 0.0) return 0.0;

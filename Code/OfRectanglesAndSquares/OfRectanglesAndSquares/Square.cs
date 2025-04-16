@@ -2,7 +2,6 @@
 {
     /// <summary>
     /// This class stores the status of a Square object
-    /// TODO breaks Liskov
     /// </summary>
     public class Square : Rectangle
     {
