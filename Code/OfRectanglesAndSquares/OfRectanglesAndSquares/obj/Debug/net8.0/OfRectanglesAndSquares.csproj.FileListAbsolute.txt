@@ -1,0 +1,15 @@
+\\wsl.localhost\Ubuntu\home\paolo\ProgSW\Code\OfRectanglesAndSquares\OfRectanglesAndSquares\bin\Debug\net8.0\OfRectanglesAndSquares.exe
+\\wsl.localhost\Ubuntu\home\paolo\ProgSW\Code\OfRectanglesAndSquares\OfRectanglesAndSquares\bin\Debug\net8.0\OfRectanglesAndSquares.deps.json
+\\wsl.localhost\Ubuntu\home\paolo\ProgSW\Code\OfRectanglesAndSquares\OfRectanglesAndSquares\bin\Debug\net8.0\OfRectanglesAndSquares.runtimeconfig.json
+\\wsl.localhost\Ubuntu\home\paolo\ProgSW\Code\OfRectanglesAndSquares\OfRectanglesAndSquares\bin\Debug\net8.0\OfRectanglesAndSquares.dll
+\\wsl.localhost\Ubuntu\home\paolo\ProgSW\Code\OfRectanglesAndSquares\OfRectanglesAndSquares\bin\Debug\net8.0\OfRectanglesAndSquares.pdb
+\\wsl.localhost\Ubuntu\home\paolo\ProgSW\Code\OfRectanglesAndSquares\OfRectanglesAndSquares\obj\Debug\net8.0\OfRectanglesAndSquares.GeneratedMSBuildEditorConfig.editorconfig
+\\wsl.localhost\Ubuntu\home\paolo\ProgSW\Code\OfRectanglesAndSquares\OfRectanglesAndSquares\obj\Debug\net8.0\OfRectanglesAndSquares.AssemblyInfoInputs.cache
+\\wsl.localhost\Ubuntu\home\paolo\ProgSW\Code\OfRectanglesAndSquares\OfRectanglesAndSquares\obj\Debug\net8.0\OfRectanglesAndSquares.AssemblyInfo.cs
+\\wsl.localhost\Ubuntu\home\paolo\ProgSW\Code\OfRectanglesAndSquares\OfRectanglesAndSquares\obj\Debug\net8.0\OfRectanglesAndSquares.csproj.CoreCompileInputs.cache
+\\wsl.localhost\Ubuntu\home\paolo\ProgSW\Code\OfRectanglesAndSquares\OfRectanglesAndSquares\obj\Debug\net8.0\OfRectanglesAndSquares.sourcelink.json
+\\wsl.localhost\Ubuntu\home\paolo\ProgSW\Code\OfRectanglesAndSquares\OfRectanglesAndSquares\obj\Debug\net8.0\OfRectanglesAndSquares.dll
+\\wsl.localhost\Ubuntu\home\paolo\ProgSW\Code\OfRectanglesAndSquares\OfRectanglesAndSquares\obj\Debug\net8.0\refint\OfRectanglesAndSquares.dll
+\\wsl.localhost\Ubuntu\home\paolo\ProgSW\Code\OfRectanglesAndSquares\OfRectanglesAndSquares\obj\Debug\net8.0\OfRectanglesAndSquares.pdb
+\\wsl.localhost\Ubuntu\home\paolo\ProgSW\Code\OfRectanglesAndSquares\OfRectanglesAndSquares\obj\Debug\net8.0\OfRectanglesAndSquares.genruntimeconfig.cache
+\\wsl.localhost\Ubuntu\home\paolo\ProgSW\Code\OfRectanglesAndSquares\OfRectanglesAndSquares\obj\Debug\net8.0\ref\OfRectanglesAndSquares.dll
