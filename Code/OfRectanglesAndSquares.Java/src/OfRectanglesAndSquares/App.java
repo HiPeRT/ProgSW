@@ -25,7 +25,7 @@ public class App {
         TestDoubleArea(r, c);
         
         // Test Rectangle #2
-        r = new RectangleWithCheck(2, 8);
+        r = new RectangleWithRound(2, 8);
         TestDoubleArea(r, c);
 
         // Test Square #1
