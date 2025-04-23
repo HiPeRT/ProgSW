@@ -1,7 +1,7 @@
 package OfRectanglesAndSquares;
 
 /**
- * This class adds a zero check for Rectangle height and width
+ * This class rounds Rectangle height and width on sets to the ceiling integer
  */
 public class RectangleWithRound extends Rectangle {
     
@@ -10,11 +10,10 @@ public class RectangleWithRound extends Rectangle {
     }
 
     public void setHeight(double height) {
-        super.setHeight(height);
+        super.setHeight(Math.ceil(height));
     }
 
     public void setWidth(double width) {
-        // TODO complete this
-        super.setWidth(width);
+        super.setWidth(Math.ceil(width));
     }
 }
