@@ -19,7 +19,7 @@ public class App {
 
     public static void main(String[] args) throws Exception {
 
-        SingletonClass sc = new SingletonClass();
+        SingletonClass sc = SingletonClass.getInstance();
 
 
         ICalculator c = new Calculator();
