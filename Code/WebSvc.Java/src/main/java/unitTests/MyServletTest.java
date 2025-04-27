@@ -1,25 +1,40 @@
 package unitTests;
 
 import java.io.IOException;
-
 import javax.servlet.ServletException;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
 
 import web.MyServlet;
 
 public class MyServletTest {
+	
+	private static <T>void Assert(T expected, T actual) {
+		if(expected != actual) {
+			System.out.println("Assertion failed! Expected " + expected + ", got "+ actual + " instead");
+			System.exit(-1);
+		}
+	}
 
 	private static void MyServlet_DbThrowsException_Return400() {
 		
 		// Arrange
+		
+		// Mock svcbuilder
 		ServicesBuilderForMocks svcBuilder = new ServicesBuilderForMocks();
+		
+		// Mock up HttpServletRequest and HttpServletResponse
+		MyHttpServletRequest request = new MyHttpServletRequest();
+	    request.setParameter("id", "11");
+	    request.setParameter("age", "34");
+	    MyHttpServletResponse response = new MyHttpServletResponse();
+
+	    // SUT stands for "Service Under Test"
 		MyServlet sut = new MyServlet(svcBuilder);
-		HttpServletRequest request = null;
-		HttpServletResponse response = null;
-		Exception ex = null;
+		
 		
 		// Act
+		
+		Exception ex = null;
+		
 		try {
 			sut.doGet(request, response);
 		} catch (ServletException e) {
@@ -29,9 +44,9 @@ public class MyServletTest {
 		}
 		
 		// Assert
-		// ex == null;
-		// response has return code 400
 		
+		Assert(ex, null);
+		Assert(response.getStatus(), 400);		
 	}
 	
 	public static void main(String[] args) {

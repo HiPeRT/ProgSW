@@ -51,7 +51,8 @@ public class MyServlet extends HttpServlet {
 			this._myDb.updateBirth(id, age);
 		}
 		catch (Exception e) {
-			// TODO: handle exception
+			// Return Http code 400
+			response.setStatus(401); // This is wrong on purpose!
 		}
 		
 	}
