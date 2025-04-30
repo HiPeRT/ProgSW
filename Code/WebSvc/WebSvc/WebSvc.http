@@ -1,0 +1,6 @@
+@WebSvc_HostAddress = http://localhost:5209
+
+GET {{WebSvc_HostAddress}}/MySvc/
+Accept: application/json
+
+###
