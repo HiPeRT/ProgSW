@@ -8,7 +8,8 @@ public class InMemoryDb implements IDb {
 	private Dictionary<Integer, Integer> _db = new Hashtable<>();
 	
 	public InMemoryDb() {
-		_db.put(11, 43);
+		// Seeding for test...
+		_db.put(11, 25);
 	}
 	
 	@Override

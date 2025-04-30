@@ -23,7 +23,7 @@ public class MyServletTest {
 		
 		// Mock up HttpServletRequest and HttpServletResponse
 		MyHttpServletRequest request = new MyHttpServletRequest();
-	    request.setParameter("id", "11");
+	    request.setParameter("id", "1"); // This causes an exception
 	    request.setParameter("age", "34");
 	    MyHttpServletResponse response = new MyHttpServletResponse();
 
