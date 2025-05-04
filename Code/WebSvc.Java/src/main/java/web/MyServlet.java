@@ -86,12 +86,12 @@ public class MyServlet extends HttpServlet {
 
 		String ageStr = jsonObject.getString("age");
 		int age = Integer.parseInt(ageStr);
+		// Business logic: check if age format is legal (e.g., >0), etc
 		try {
 			this._myDb.updateBirth(id, age);
 		}
 		catch (Exception e) {
-			// Return Http code 400
-			response.setStatus(401); // This is wrong on purpose!
+			response.setStatus(400);
 		}
 	}
 

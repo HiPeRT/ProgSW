@@ -27,7 +27,8 @@ namespace UnitTests
             //MyHttpServletResponse response = new MyHttpServletResponse();
 
             // SUT stands for "Service Under Test"
-            //MySvcController sut = new MySvcController(svcBuilder);
+            MySvcController sut = new MySvcController();
+            //sut.SetDb(new MockThatThrowsException());
 
             // Act
 
@@ -35,7 +36,7 @@ namespace UnitTests
 
             try
             {
-                //sut.Post(request, response);
+                sut.Get(11, 43);
             }
             catch (Exception e)
             {

@@ -14,9 +14,14 @@ namespace Controllers
         private IDb _myDb = null;
 
         // Uncomment this to destroy everything!!
-        //public MySvcController(ISvcBuilder svcBuilder)
+        public MySvcController(ISvcBuilder svcBuilder)
+        {
+            _myDb = svcBuilder.CreateDb();
+        }
+
+        //public void SetDb(IDb db)
         //{
-        //    _myDb = svcBuilder.CreateDb();
+        //    _myDb = db;
         //}
 
         public MySvcController()
