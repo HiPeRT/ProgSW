@@ -4,6 +4,9 @@ import repositories.IDb;
 import repositories.InMemoryDb;
 import repositories.MongoDB;
 
+/**
+ * Implementation for Local and PROD env
+ */
 public class ServiceBuilder implements ISvcBuilder {
 	
 	private static ServiceBuilder _instance = null;
@@ -27,6 +30,11 @@ public class ServiceBuilder implements ISvcBuilder {
 		if(_env.IsLocal())
 			return new InMemoryDb();
 		return new MongoDB();
+	}
+
+	@Override
+	public IPersonaService createPersonaService() {
+		return new PersonaService(createDb());
 	}
 
 }

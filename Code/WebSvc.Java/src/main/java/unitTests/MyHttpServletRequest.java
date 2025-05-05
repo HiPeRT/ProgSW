@@ -26,6 +26,9 @@ import javax.servlet.http.HttpSession;
 import javax.servlet.http.HttpUpgradeHandler;
 import javax.servlet.http.Part;
 
+/**
+ * Support for UnitTests
+ */
 public class MyHttpServletRequest implements HttpServletRequest {
 	
 	private Dictionary<String, String> _params = new Hashtable<>();

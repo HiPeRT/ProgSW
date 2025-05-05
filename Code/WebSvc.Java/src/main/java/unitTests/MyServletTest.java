@@ -5,6 +5,9 @@ import javax.servlet.ServletException;
 
 import web.MyServlet;
 
+/**
+ * Unit and integration tests
+ */
 public class MyServletTest {
 	
 	private static <T>void Assert(T expected, T actual) {
@@ -28,7 +31,7 @@ public class MyServletTest {
 	    MyHttpServletResponse response = new MyHttpServletResponse();
 
 	    // SUT stands for "Service Under Test"
-		MyServlet sut = new MyServlet(svcBuilder);
+		MyServlet sut = new MyServlet(svcBuilder.createPersonaService());
 		
 		
 		// Act
@@ -36,7 +39,7 @@ public class MyServletTest {
 		Exception ex = null;
 		
 		try {
-			sut.doGet(request, response);
+			sut.doPost(request, response);
 		} catch (ServletException e) {
 			ex = e;
 		} catch (IOException e) {

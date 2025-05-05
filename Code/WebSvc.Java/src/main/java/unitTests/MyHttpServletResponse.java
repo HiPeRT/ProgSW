@@ -9,6 +9,9 @@ import javax.servlet.ServletOutputStream;
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletResponse;
 
+/**
+ * Support for UnitTests
+ */
 public class MyHttpServletResponse implements HttpServletResponse {
 	
 	private int _status;
