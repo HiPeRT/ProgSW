@@ -19,9 +19,6 @@ public class App {
 
     public static void main(String[] args) throws Exception {
 
-        SingletonClass sc = SingletonClass.getInstance();
-
-
         ICalculator c = new Calculator();
 
         // Test Rectangle #1
