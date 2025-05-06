@@ -10,7 +10,7 @@ import web.MyServlet;
  */
 public class MyServletTest {
 	
-	private static void Assert(int expected, int actual) {
+	private static void AssertEquals(int expected, int actual) {
 		if(expected != actual) {
 			System.out.println("Assertion failed! Expected \'" + expected + "\', got \'"+ actual + "\' instead");
 			System.exit(-1);
@@ -33,7 +33,7 @@ public class MyServletTest {
 		
 		// Mock up HttpServletRequest and HttpServletResponse
 		MyHttpServletRequest request = new MyHttpServletRequest();
-	    request.setParameter("id", "1"); // This causes an exception
+	    request.setParameter("id", "11");
 	    request.setBody("{\"age\" : \"43\"}");
 	    MyHttpServletResponse response = new MyHttpServletResponse();
 
@@ -43,20 +43,20 @@ public class MyServletTest {
 		
 		// Act
 		
-		Exception ex = null;
+		Exception ioException = null;
 		
 		try {
 			sut.doPost(request, response);
-		} catch (ServletException e) {
-			ex = e;
 		} catch (IOException e) {
-			ex = e;
+			ioException = e;
 		}
 		
 		// Assert
 		
-		AssertNull(ex);
-		Assert(response.getStatus(), 400);		
+		AssertNull(ioException); // Check we dit not capture a wrong type of Exception
+		AssertEquals(response.getStatus(), 400);
+		
+		System.out.println("Test successful!");
 	}
 	
 	public static void main(String[] args) {
