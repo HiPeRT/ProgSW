@@ -18,5 +18,7 @@
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="D:/Unimore/Workspace/ProgSW/Code/Lib/javax.servlet-api-4.0.1.jar"/>
+	<classpathentry kind="lib" path="D:/Unimore/Workspace/ProgSW/Code/Lib/guice-6.0.0.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
