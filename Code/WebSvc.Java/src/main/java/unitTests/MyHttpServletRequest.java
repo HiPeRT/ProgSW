@@ -2,6 +2,7 @@ package unitTests;
 
 import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.StringReader;
 import java.io.UnsupportedEncodingException;
 import java.security.Principal;
 import java.util.Collection;
@@ -32,10 +33,15 @@ import javax.servlet.http.Part;
 public class MyHttpServletRequest implements HttpServletRequest {
 	
 	private Dictionary<String, String> _params = new Hashtable<>();
+	private String _body = null;
 	
-	// This method is mine
+	// These methods are mine
 	public void setParameter(String key, String val) {
 		this._params.put(key, val);
+	}
+
+	public void setBody(String s) {
+		this._body = s;
 	}
 
 	@Override
@@ -153,8 +159,7 @@ public class MyHttpServletRequest implements HttpServletRequest {
 
 	@Override
 	public BufferedReader getReader() throws IOException {
-		// TODO Auto-generated method stub
-		return null;
+		return new BufferedReader(new StringReader(this._body));
 	}
 
 	@Override
