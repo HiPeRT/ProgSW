@@ -3,7 +3,7 @@ package diwithguice;
 import com.google.inject.Inject;
 
 public class ServiceConsumerWithSetter implements IServiceConsumer {
-private IWriter _writer = null;
+	private IWriter _writer = null;
 	
 	@Inject
 	public void setWriter(IWriter service) {
