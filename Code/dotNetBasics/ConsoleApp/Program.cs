@@ -1,7 +1,9 @@
-﻿internal class Program
+﻿using ConsoleApp;
+
+internal class Program
 {
     /// <summary>
-    /// Main entry point of application (class-based implementatin. Could also be "script-like", main free implementation
+    /// Main entry point of application (class-based implementation). Could also be "script-like", main free implementation.
     /// </summary>
     /// <param name="args"></param>
     private static void Main(string[] args)
