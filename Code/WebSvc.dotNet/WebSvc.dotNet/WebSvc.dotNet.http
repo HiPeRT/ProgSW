@@ -1,0 +1,6 @@
+@WebSvc.dotNet_HostAddress = http://localhost:5041
+
+GET {{WebSvc.dotNet_HostAddress}}/mysvc/
+Accept: application/json
+
+###
