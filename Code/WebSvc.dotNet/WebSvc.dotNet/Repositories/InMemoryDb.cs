@@ -1,4 +1,6 @@
-﻿namespace Repositories
+﻿using Model;
+
+namespace Repositories
 {
     public class InMemoryDb : IDb
     {
@@ -9,12 +11,12 @@
             _db.Add(11, 25);
         }
 
-        public void UpdateBirth(int key, int age)
+        public void UpdateBirth(int key, Person p)
         {
             if (!_db.ContainsKey(key))
                 throw new Exception("User with " + key + " does not exist!");
 
-            _db[key] = age;
+            _db[key] = p.Age;
         }
     }
 }

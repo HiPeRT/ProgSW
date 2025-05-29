@@ -1,8 +1,10 @@
-﻿namespace Repositories
+﻿using Model;
+
+namespace Repositories
 {
     public class MongoDb : IDb
     {
-        public void UpdateBirth(int key, int age)
+        public void UpdateBirth(int key, Person p)
         {
             // ...
         }

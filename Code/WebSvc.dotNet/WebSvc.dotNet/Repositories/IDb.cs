@@ -1,7 +1,9 @@
-﻿namespace Repositories
+﻿using Model;
+
+namespace Repositories
 {
     public interface IDb
     {
-        void UpdateBirth(int key, int age);
+        void UpdateBirth(int key, Person p);
     }
 }

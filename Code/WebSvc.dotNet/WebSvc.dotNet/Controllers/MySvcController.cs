@@ -25,11 +25,9 @@ namespace Controllers
         [HttpPost]
         public void Post([System.Web.Http.FromUri] int id, [FromBody] MySvcPostPayload dto)
         {
-            var p = _mapper.Map<Person>(dto);
-
             try
             {
-                _myDb.UpdateBirth(id, p.Age);
+                _myDb.UpdateBirth(id, _mapper.Map<Person>(dto));
             }
             catch (Exception)
             {
