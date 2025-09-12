@@ -1,3 +1,18 @@
+# Scritto del 12 Settembre 2025
+
+| Matricola | Crocette | D9 | D10 | Esito | Voto | Note                     |
+|-----------|----------|----|-----|-------|------|--------------------------|
+| 176933    | 12.5     | 3  | 0   | 15.5  | 16   | Necessario orale         |
+| 154551    |          |    |     | RIT   | RIT  |                          |
+| 146936    |          |    |     | ASS   | ASS  | Assente non giustificato |
+| 177338    | 15.5     | 7  | 6   | 28.5  | 29   |                          |
+| 177214    | 13.5     | 0  | 3   | 16.5  | 17   | Necessario orale         |
+| 176940    | 10.5     | 7  | 6   | 23.5  | 24   |                          |
+| 180850    | 15.5     | 6  | 6   | 27.5  | 28   |                          |
+| 176927    | 16.5     | 7  | 6   | 29.5  | 30   |                          |
+| 176925    | 17       | 7  | 6   | 30    | 30   |                          |
+
+
 # Scritto del 14 Luglio 2025
 
 | Matricola | Crocette | D9 | D10 | Esito | Voto | Note |
