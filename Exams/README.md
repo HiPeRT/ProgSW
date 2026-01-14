@@ -1,3 +1,11 @@
+# Scritto del 14 gennaio 2026
+
+| Matricola | Crocette | D9 | D10 | Esito | Voto | Note                     |
+|-----------|----------|----|-----|-------|------|--------------------------|
+| 176933    | 13       | 7  | 4   | 24    | 24   |                          |
+| 154551    | 16       | 8  | 5   | 29    | 29   |                          |
+
+
 # Scritto del 12 Settembre 2025
 
 | Matricola | Crocette | D9 | D10 | Esito | Voto | Note                     |
