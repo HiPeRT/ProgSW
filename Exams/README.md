@@ -1,3 +1,16 @@
+# Scritto del 20 febbraio 2026
+
+| Matricola | Crocette | D9  | D10 | Esito | Voto | Note                     |
+|-----------|----------|-----|-----|-------|------|--------------------------|
+| 176180    |          |     |     | ASS   | ASS  |                          |
+| 169650    | 10       | 0   | 0   | 10    | INS  |                          |
+| 176711    | 14       | 7,5 | 5   | 26,5  | 27   |                          |
+| 193451    |          |     |     | ASS   | ASS  | Assente non giustificato |
+| 179795    | 12       | 7   | 4   | 23    | 23   |                          |
+| 169652    | 9,5      | 4   | 4   | 17,5  | 18   |                          |
+| 176182    | 15       | 4   | 3   | 22    | 22   |                          |
+| 180675    |          |     |     | ASS   | ASS  |                          |
+
 # Scritto del 14 gennaio 2026
 
 | Matricola | Crocette | D9 | D10 | Esito | Voto | Note                     |
