@@ -22,10 +22,6 @@ Espulsione diretta dall’aula, senza se e senza ma, a insindacabile giudizio de
 
 Non dite che non ve l’avevo detto.
 
-#### Non sono riuscito a restare alla correzione, il mio compito è ancora valido?
-
-Il compito è ancora valido, ma non è stato corretto, e “vale” un anno. Si prega di contattare i docenti per procedere alla correzione, e ottenere un voto registrabile.
-
 #### Quanto rimane valido un voto?
 
 I voti della prova scritta durano un anno. Qualora lo studente partecipasse alla correzione di una prova scritta successiva, perderebbe il voto precedentemente acquisito. Se uno studente chiede la prova orale, il voto conseguito dura fino alla fine della sessione corrente.
