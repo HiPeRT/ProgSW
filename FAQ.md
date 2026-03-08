@@ -8,13 +8,15 @@ No, non è obbligatorio fare l’orale. Se nel test scritto si raggiungono almen
 #### Cosa mi serve per seguire le lezioni?
 
 Innanzitutto, direi queste slide. I libri non sono obbligatori, ma contengono comunque i concetti espressi nelle slide, e in piu' alcuni approfondimenti utili.
-Sara' necessario un computer per svolgere le esercitazioni, e una (o piu') delle board embedded segnalate nelle slide.
-Qualora il candidato non potesse/volesse comprarne una, puo' rivolgersi al docente per trovare una soluzione.
+Sara' necessario un computer per svolgere le esercitazioni.
+Eventuale ulteriore materiale (es: board embedded) è segnalato segnalate nelle slide.
+Qualora il candidato non potesse/volesse comprarlo, puo' rivolgersi al docente  che lo metterà a disposizione.
 
 
 #### Non ho ottenuto le propedeuticità. Posso lo stesso effettuare l’esame?
 
-Non ci sono propedeuticità, se non un minimo di esperienza di programmazione C/C++, preferibilmente in ambiente GNU/Linux
+Non ci sono propedeuticità, se non un minimo di esperienza di programmazione C/C++, preferibilmente in ambiente GNU/Linux.
+Può essere d'aiuto la conoscenza di <i>Object Oriented Progrmaming (OOP)</i>.
 
 #### Cosa succede se vengo “beccato” a parlare o a copiare all’esame?
 
@@ -24,13 +26,9 @@ Non dite che non ve l’avevo detto.
 
 #### Quanto rimane valido un voto?
 
-I voti della prova scritta durano un anno. Qualora lo studente partecipasse alla correzione di una prova scritta successiva, perderebbe il voto precedentemente acquisito. Se uno studente chiede la prova orale, il voto conseguito dura fino alla fine della sessione corrente.
+I voti della prova scritta durano un anno. Qualora lo studente partecipasse e consegnasse una prova scritta successiva, perderebbe il voto precedentemente acquisito. Se uno studente chiede la prova orale, il voto conseguito dura fino alla fine della sessione corrente.
 
 Il voto conseguito dopo la prova orale rimane valido fino a una settimana dopo l’ultimo appello scritto della sessione (o dell’orale equivalente). Dopodiché, o si richiede esplicitamente che venga registrato, o il voto è perso, e il candidato deve rifare lo scritto.
-
-#### Dopo la correzione, non sono soddisfatto del voto che ho ottenuto allo scritto. Posso eventualmente riprovare il compito senza perdere il voto?
-
-Sì. Qualora tuttavia il candidato consegnasse e partecipasse alla correzione del secondo tentativo, perderebbe il voto precedentemente acquisito.
 
 #### Quando posso registrare un voto?
 
