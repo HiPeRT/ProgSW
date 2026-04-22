@@ -3,6 +3,7 @@ package unitTests;
 import java.io.IOException;
 import javax.servlet.ServletException;
 
+import web.MyServletNoClean;
 import web.MyServlet;
 
 /**
@@ -39,6 +40,42 @@ public class MyServletTest {
 
 	    // SUT stands for "Service Under Test"
 		MyServlet sut = new MyServlet(svcBuilder.createPersonaService());
+		
+		
+		// Act
+		
+		Exception ioException = null;
+		
+		try {
+			sut.doPost(request, response);
+		} catch (IOException e) {
+			ioException = e;
+		}
+		
+		// Assert
+		
+		AssertNull(ioException); // Check we dit not capture a wrong type of Exception
+		AssertEquals(response.getStatus(), 400);
+		
+		System.out.println("Test successful!");
+	}
+
+	
+	private static void MyServletNoClean_DbThrowsException_Return400() {
+		
+		// Arrange
+		
+		// Mock svcbuilder
+		ServicesBuilderForMocks svcBuilder = new ServicesBuilderForMocks();
+		
+		// Mock up HttpServletRequest and HttpServletResponse
+		MyHttpServletRequest request = new MyHttpServletRequest();
+	    request.setParameter("id", "11");
+	    request.setBody("{\"age\" : \"43\"}");
+	    MyHttpServletResponse response = new MyHttpServletResponse();
+
+	    // SUT stands for "Service Under Test"
+		MyServletNoClean sut = new MyServletNoClean(svcBuilder);
 		
 		
 		// Act

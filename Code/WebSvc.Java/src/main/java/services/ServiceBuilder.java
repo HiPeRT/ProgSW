@@ -5,7 +5,7 @@ import repositories.InMemoryDb;
 import repositories.MongoDB;
 
 /**
- * Implementation for Local and PROD env
+ * Implementation for Local and PROD env (Factory pattern)
  */
 public class ServiceBuilder implements ISvcBuilder {
 	
@@ -29,7 +29,7 @@ public class ServiceBuilder implements ISvcBuilder {
 	public IDb createDb() {
 		if(_env.IsLocal())
 			return new InMemoryDb();
-		return new MongoDB();
+		return new MongoDb();
 	}
 
 	@Override
