@@ -1,7 +1,8 @@
 package singleton;
 
 /**
- * This class implements a singleton pattern
+ * This class implements a Singleton pattern.
+ * This class is not thread safe
  */
 public class SingletonClass {
 	// Used to check whether we are accessing the singleton object

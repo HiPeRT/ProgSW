@@ -1,8 +1,5 @@
 package singleton;
 
-/**
- * This class is not thread safe
- */
 public class MainClass {
 
 	public static void main(String[] args) {
