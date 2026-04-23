@@ -1,6 +1,7 @@
 package factory.entities;
 
 import factory.interfaces.IThing;
+
 /**
  * ConcreteThing2 entity
  */

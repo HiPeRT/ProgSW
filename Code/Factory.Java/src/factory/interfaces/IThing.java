@@ -5,6 +5,9 @@ package factory.interfaces;
  */
 public interface IThing {
 	
+	/**
+	 * Business functionality of entity
+	 */
 	public void foo();
 
 }
