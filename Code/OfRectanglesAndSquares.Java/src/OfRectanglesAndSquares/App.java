@@ -16,6 +16,22 @@ public class App {
         // If test fails, throw exception
         throw new Exception("Test failed! Expected " + area1 + ", got " + area2);
     }
+    
+
+    public static void TestQuadrupleArea(ISquare rectangle, ICalculator calculator) throws Exception {
+        double area1, area2;
+        area1 = calculator.calcArea(rectangle);
+
+        rectangle.setSide(rectangle.getSide() * 2);
+        area2 = calculator.calcArea(rectangle);
+        
+        // Test ok
+        if (area2 == area1 * 4)
+            return;
+
+        // If test fails, throw exception
+        throw new Exception("Test failed! Expected " + area1 + ", got " + area2);
+    }
 
     public static void main(String[] args) throws Exception {
 
@@ -30,11 +46,14 @@ public class App {
         TestDoubleArea(r, c);
 
         // Test Square #1
-        r = new Square(4);
-        TestDoubleArea(r, c);
+        ISquare s = new Square(4);
+        // This would be a more suitable test...
+        TestQuadrupleArea(s, c);
 
         // Test Square #2
-        r = new Square(2);
-        TestDoubleArea(r, c);
+        s = new Square(2);
+        TestQuadrupleArea(s, c);
+        
+        System.out.println("ALL TESTS RUN SUCCESFULLY.");
     }
 }

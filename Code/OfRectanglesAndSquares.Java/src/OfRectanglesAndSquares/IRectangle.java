@@ -1,5 +1,8 @@
 package OfRectanglesAndSquares;
 
+/**
+ * Generic interface to a rectangle
+ */
 public interface IRectangle {
 
     /**

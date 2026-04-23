@@ -6,6 +6,7 @@ import java.util.Hashtable;
 import models.Person;
 
 /**
+ * IDb Implementation with RAM data structures.
  * For local testing. Does not persist.
  */
 public class InMemoryDb implements IDb {

@@ -1,0 +1,2 @@
+module OfRectanglesAndSquaresNoSolid.Java {
+}

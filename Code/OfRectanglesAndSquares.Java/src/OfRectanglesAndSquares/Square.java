@@ -3,19 +3,19 @@ package OfRectanglesAndSquares;
 /**
  * This class stores the status of a Square object
  */
-public class Square extends Rectangle {
+public class Square implements ISquare {
 
-    public void setWidth(double width) {
-        super.setWidth(width);
-        super.setHeight(width);
+    private double _side;
+    
+    public void setSide(double side) {
+        this._side = side;
     }
+    
+    public double getSide() {
+		return _side;
+	}
 
-    public void setHeight(double height) {
-        super.setHeight(height);
-        super.setWidth(height);
-    }
-
-    public Square(double side) {
-        super(side, side);
+	public Square(double side) {
+    	this._side = side;
     }
 }
