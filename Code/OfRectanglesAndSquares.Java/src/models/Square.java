@@ -1,4 +1,4 @@
-package OfRectanglesAndSquares;
+package models;
 
 /**
  * This class stores the status of a Square object
