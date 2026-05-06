@@ -11,7 +11,7 @@ public class TheFactory extends BaseFactory {
 	@Override
 	public IThing createThing() {
 		
-		bool someCondition = true;
+		boolean someCondition = true;
 		
 		// If condition is met, then use the ConcreteThing2 class,
 		// else use the ConcreteClass
