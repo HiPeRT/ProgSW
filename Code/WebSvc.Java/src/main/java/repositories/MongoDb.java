@@ -5,7 +5,7 @@ import models.Person;
 /**
  * Mongo adapter
  */
-public class MongoDB implements IDb {
+public class MongoDb implements IDb {
 
 	@Override
 	public void updateBirth(Person p) throws Exception {		

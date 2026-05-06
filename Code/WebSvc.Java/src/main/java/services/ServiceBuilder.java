@@ -2,7 +2,7 @@ package services;
 
 import repositories.IDb;
 import repositories.InMemoryDb;
-import repositories.MongoDB;
+import repositories.MongoDb;
 
 /**
  * Implementation for Local and PROD env (Factory pattern)
