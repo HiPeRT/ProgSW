@@ -35,6 +35,12 @@ public class Rectangle {
      * @return
      */
     public double calcArea() {
+    	
+    	/*
+    	 * Adding this modifications here breaks the 'O' principle of SOLID
+    	 * if(this._width == 0.0) return 0.0;
+    	 * if(this._height == 0.0) return 0.0;
+    	 */
         return this._height * this._width;
     }
 }

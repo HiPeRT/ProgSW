@@ -1,11 +1,12 @@
 package OfRectanglesAndSquaresNoSolid;
 
+/**
+ * Test to check that doubling width doubles area
+ * These tests show how my design breaks the 'L' principle of SOLID. Why?
+ * @param rectangle
+ * @throws Exception
+ */
 public class App {
-	/**
-	 * Test to check that doubling width doubles area
-	 * @param rectangle
-	 * @throws Exception
-	 */
 	 public static void TestDoubleArea(Rectangle rectangle) throws Exception {
 	        double area1, area2;
 	        area1 = rectangle.calcArea();
