@@ -1,4 +1,4 @@
-package OfRectanglesAndSquares;
+package models;
 
 /**
  * This class rounds Rectangle height and width on sets to the ceiling integer

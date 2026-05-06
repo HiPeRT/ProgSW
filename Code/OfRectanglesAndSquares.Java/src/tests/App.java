@@ -1,7 +1,24 @@
-package OfRectanglesAndSquares;
+package tests;
 
+import models.IRectangle;
+import models.ISquare;
+import models.Rectangle;
+import models.RectangleWithRound;
+import models.Square;
+import services.Calculator;
+import services.ICalculator;
+
+/**
+ * Unit tests
+ */
 public class App {
 
+	/**
+	 * Test for Rectangle entity
+	 * @param rectangle
+	 * @param calculator
+	 * @throws Exception
+	 */
     public static void TestDoubleArea(IRectangle rectangle, ICalculator calculator) throws Exception {
         double area1, area2;
         area1 = calculator.calcArea(rectangle);
@@ -18,6 +35,12 @@ public class App {
     }
     
 
+	/**
+	 * Test for Square entity
+	 * @param rectangle
+	 * @param calculator
+	 * @throws Exception
+	 */
     public static void TestQuadrupleArea(ISquare rectangle, ICalculator calculator) throws Exception {
         double area1, area2;
         area1 = calculator.calcArea(rectangle);
