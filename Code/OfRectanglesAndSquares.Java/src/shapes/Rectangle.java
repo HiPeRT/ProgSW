@@ -1,4 +1,7 @@
-package OfRectanglesAndSquares;
+package shapes;
+
+import interfaces.IRectangle;
+
 /**
  * This class handles the status of a Rectangle
  */

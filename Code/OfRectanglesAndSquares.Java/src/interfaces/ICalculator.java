@@ -1,4 +1,4 @@
-package OfRectanglesAndSquares;
+package interfaces;
 
 /**
  * This interface represents the (business) logic for computing the area of geometric shapes

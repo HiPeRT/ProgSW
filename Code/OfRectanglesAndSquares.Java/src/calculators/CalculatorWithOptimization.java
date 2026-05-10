@@ -1,4 +1,6 @@
-package OfRectanglesAndSquares;
+package calculators;
+
+import interfaces.IRectangle;
 
 /**
  * This class has an optimized calculus algorithm only for rectangles

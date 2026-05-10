@@ -1,6 +1,14 @@
-package OfRectanglesAndSquares;
+package test;
 
-public class App {
+import calculators.Calculator;
+import interfaces.ICalculator;
+import interfaces.IRectangle;
+import interfaces.ISquare;
+import shapes.Rectangle;
+import shapes.RectangleWithRound;
+import shapes.Square;
+
+public class TestMain {
 
     public static void TestDoubleArea(IRectangle rectangle, ICalculator calculator) throws Exception {
         double area1, area2;
@@ -34,6 +42,8 @@ public class App {
     }
 
     public static void main(String[] args) throws Exception {
+    	
+    	System.out.print("RUNNING TESTS, DO NOT USE THIS IN PRODUCTION");
 
         ICalculator c = new Calculator();
 

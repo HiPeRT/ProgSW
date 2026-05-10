@@ -1,4 +1,8 @@
-package OfRectanglesAndSquares;
+package calculators;
+
+import interfaces.ICalculator;
+import interfaces.IRectangle;
+import interfaces.ISquare;
 
 /**
  * Base implementation that makes no use, e.g., of Math library for square

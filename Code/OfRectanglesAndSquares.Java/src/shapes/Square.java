@@ -1,4 +1,6 @@
-package OfRectanglesAndSquares;
+package shapes;
+
+import interfaces.ISquare;
 
 /**
  * This class stores the status of a Square object

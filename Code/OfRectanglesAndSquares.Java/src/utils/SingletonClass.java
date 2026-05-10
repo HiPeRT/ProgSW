@@ -1,7 +1,8 @@
-package OfRectanglesAndSquares;
+package utils;
 
 public class SingletonClass {
     static private SingletonClass _obj = null;
+    private int _counter = 0;
 
     private SingletonClass(){}
 
@@ -17,5 +18,7 @@ public class SingletonClass {
     {
         this._counter ++;
     }
-    private int _counter = 0;
+    public int getCount() {
+    	return this._counter;
+    }
 }

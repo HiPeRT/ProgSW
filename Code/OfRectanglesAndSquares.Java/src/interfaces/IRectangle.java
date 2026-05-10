@@ -1,4 +1,4 @@
-package OfRectanglesAndSquares;
+package interfaces;
 
 /**
  * Generic interface to a rectangle
@@ -13,13 +13,13 @@ public interface IRectangle {
 
     /**
      * Sets the width of a Rectangle
-     * @param height
+     * @param width
      */
     void setWidth(double width);
 
     /**
      * Gets the width of a Rectangle
-     * @param height
+     * @return width
      */
     double getWidth();
 
