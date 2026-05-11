@@ -1,2 +1,0 @@
-module Factory.Java {
-}

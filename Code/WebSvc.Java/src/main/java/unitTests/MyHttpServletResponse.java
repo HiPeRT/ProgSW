@@ -5,9 +5,9 @@ import java.io.PrintWriter;
 import java.util.Collection;
 import java.util.Locale;
 
-import javax.servlet.ServletOutputStream;
-import javax.servlet.http.Cookie;
-import javax.servlet.http.HttpServletResponse;
+import jakarta.servlet.ServletOutputStream;
+import jakarta.servlet.http.Cookie;
+import jakarta.servlet.http.HttpServletResponse;
 
 /**
  * Support for UnitTests
@@ -148,7 +148,6 @@ public class MyHttpServletResponse implements HttpServletResponse {
 		return null;
 	}
 
-	@Override
 	public String encodeRedirectUrl(String url) {
 		// TODO Auto-generated method stub
 		return null;
@@ -160,7 +159,6 @@ public class MyHttpServletResponse implements HttpServletResponse {
 		return null;
 	}
 
-	@Override
 	public String encodeUrl(String url) {
 		// TODO Auto-generated method stub
 		return null;
@@ -231,8 +229,13 @@ public class MyHttpServletResponse implements HttpServletResponse {
 		
 	}
 
-	@Override
 	public void setStatus(int sc, String sm) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void sendRedirect(String arg0, int arg1, boolean arg2) throws IOException {
 		// TODO Auto-generated method stub
 		
 	}

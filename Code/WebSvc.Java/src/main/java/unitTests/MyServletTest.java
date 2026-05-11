@@ -1,7 +1,6 @@
 package unitTests;
 
 import java.io.IOException;
-import javax.servlet.ServletException;
 
 import web.MyServletNoClean;
 import web.MyServlet;
@@ -25,7 +24,7 @@ public class MyServletTest {
 		}
 	}
 
-	private static void MyServlet_DbThrowsException_Return400() {
+	private static void MyServlet_DbThrowsException_Return400() throws Exception {
 		
 		// Arrange
 		
@@ -61,7 +60,7 @@ public class MyServletTest {
 	}
 
 	
-	private static void MyServletNoClean_DbThrowsException_Return400() {
+	private static void MyServletNoClean_DbThrowsException_Return400() throws Exception {
 		
 		// Arrange
 		
@@ -97,7 +96,14 @@ public class MyServletTest {
 	}
 	
 	public static void main(String[] args) {
-		MyServlet_DbThrowsException_Return400();
+		
+		try {
+			MyServlet_DbThrowsException_Return400();
+			MyServletNoClean_DbThrowsException_Return400();
+		} catch(Exception e) {
+			System.out.println("ERROR. Exception thrown!");
+			e.printStackTrace();
+		}
 	}
 
 }

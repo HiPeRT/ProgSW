@@ -3,18 +3,18 @@ package web;
 import java.io.BufferedReader;
 import java.io.IOException;
 
-import javax.servlet.ServletException;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 
 import org.json.JSONException;
 import org.json.JSONObject;
 
-// We don't want this dependency!!
-import repositories.MongoDb;
+import thirdparty.MongoDb;
 
-
+@WebServlet("/MyServlet")
 public class MyServletNoSolid extends HttpServlet {
 private static final long serialVersionUID = 1L;
 	
@@ -23,15 +23,18 @@ private static final long serialVersionUID = 1L;
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public MyServletNoClean() {
-        this._myDb = new MongoDb()
+    public MyServletNoSolid() {
+        this._myDb = new MongoDb();
     }
 
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		
+
+		/*
+		 * https://something/Myservlet?id=12345&age=34
+		 */
 		int id = Integer.parseInt(request.getParameter("id"));
 		int age = Integer.parseInt(request.getParameter("age"));
 		
@@ -49,6 +52,9 @@ private static final long serialVersionUID = 1L;
 	 */
 	public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
+		/*
+		 * https://something/Myservlet?id=12345
+		 */
 		int id = Integer.parseInt(request.getParameter("id"));
 		
 		StringBuilder requestBody = new StringBuilder();
@@ -66,6 +72,12 @@ private static final long serialVersionUID = 1L;
 			response.getWriter().append(e.getMessage() + "\n" + e.getStackTrace().toString());
 			return;
 		  }
+		
+		/**
+		 * {
+		 *   "age" : 34
+		 * }
+		 */
 
 		String ageStr = jsonObject.getString("age");
 		int age = Integer.parseInt(ageStr);

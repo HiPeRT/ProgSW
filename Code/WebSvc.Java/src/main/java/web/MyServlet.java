@@ -1,39 +1,30 @@
 package web;
 
 import java.io.IOException;
-import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 
 import org.json.JSONException;
 import org.json.JSONObject;
 
 import models.Person;
 import services.IPersonaService;
-import services.ServiceBuilder;
 import utils.Mapper;
 import utils.WebUtils;
 
 /**
  * Servlet implementation class MyServlet
  */
-@WebServlet("/MyServlet")
+//@WebServlet("/MyServlet")
 public class MyServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	private IPersonaService _personaSvc = null;
 	
     /**
-     * @see HttpServlet#HttpServlet()
-     */
-    public MyServlet() {
-        this(ServiceBuilder.GetInstance().createPersonaService());
-    }
-
-    /**
-     * Explicitly assign svcBuilder. This is used for testing.
-     * We'll see how this is handled in Middleware...
+     * We receive it by middleware.
      * @param svcBuilder
      */
     public MyServlet(IPersonaService personaSvc) {
@@ -45,7 +36,7 @@ public class MyServlet extends HttpServlet {
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
-	public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
+	public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 		int id = Integer.parseInt(request.getParameter("id"));
 

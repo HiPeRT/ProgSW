@@ -8,7 +8,7 @@ import models.Person;
 public interface IDb {
 	
 	/**
-	 * Old, non CLEAN
+	 * Old, non CLEAN.
 	 * @param key
 	 * @param age
 	 * @throws Exception

@@ -2,7 +2,7 @@ package services;
 
 import repositories.IDb;
 import repositories.InMemoryDb;
-import repositories.MongoDb;
+import repositories.MongoAdapter;
 
 /**
  * Implementation for Local and PROD env (Factory pattern)
@@ -10,18 +10,15 @@ import repositories.MongoDb;
 public class ServiceBuilder implements ISvcBuilder {
 	
 	private static ServiceBuilder _instance = null;
-	private IEnvironment _env = null;
+	
+	// Runtime env
+	private IEnvironment _env = TheEnvironment.GetInstance();
 	
 	private ServiceBuilder() {
-		
-		// TODO we will see how this is handled by a MW...
-		this._env = new TheEnvironment();
 	}
 	
 	public static ISvcBuilder GetInstance() {
-		if(_instance == null)
-			_instance = new ServiceBuilder();
-		
+		if(_instance == null) _instance = new ServiceBuilder();		
 		return _instance;
 	}
 
@@ -29,11 +26,12 @@ public class ServiceBuilder implements ISvcBuilder {
 	public IDb createDb() {
 		if(_env.IsLocal())
 			return new InMemoryDb();
-		return new MongoDb();
+		return new MongoAdapter();
 	}
 
 	@Override
 	public IPersonaService createPersonaService() {
+		// We don't need to mock this in Local env. Always return the real one.
 		return new PersonaService(createDb());
 	}
 

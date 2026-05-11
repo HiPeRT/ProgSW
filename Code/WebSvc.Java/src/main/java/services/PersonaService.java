@@ -17,6 +17,9 @@ public class PersonaService implements IPersonaService {
 	public void updateBirth(Person p) throws Exception {
 		
 		// Business logic: check if age format is legal (e.g., >0), etc
+		if(p.getAge() <=0) throw new Exception("age");
+		
+		// Other checks
 		
 		this._myDb.updateBirth(p);
 	}
