@@ -1,4 +1,4 @@
-package OfRectanglesAndSquares;
+package models;
 
 /**
  * Generic interface to a rectangle

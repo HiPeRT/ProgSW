@@ -1,4 +1,7 @@
-package OfRectanglesAndSquares;
+package services;
+
+import models.IRectangle;
+import models.ISquare;
 
 /**
  * Base implementation that makes no use, e.g., of Math library for square
