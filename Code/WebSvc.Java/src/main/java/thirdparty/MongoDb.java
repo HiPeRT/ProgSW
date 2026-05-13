@@ -1,7 +1,7 @@
 package thirdparty;
 
 /**
- * MongoDìb library
+ * MongoDb library
  */
 public class MongoDb {
 

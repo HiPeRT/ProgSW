@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 
 import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
@@ -14,6 +15,10 @@ import org.json.JSONObject;
 import repositories.IDb;
 import services.ISvcBuilder;
 
+/**
+ * SOLID but not clean servlet
+ */
+@WebServlet("/MyServletNoClean")
 public class MyServletNoClean extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	

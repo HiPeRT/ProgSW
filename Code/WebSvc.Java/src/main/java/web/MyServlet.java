@@ -18,7 +18,7 @@ import utils.WebUtils;
 /**
  * Servlet implementation class MyServlet
  */
-//@WebServlet("/MyServlet")
+@WebServlet("/MyServlet")
 public class MyServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	private IPersonaService _personaSvc = null;

@@ -14,7 +14,10 @@ import org.json.JSONObject;
 
 import thirdparty.MongoDb;
 
-@WebServlet("/MyServlet")
+/**
+ * Basic servlet
+ */
+@WebServlet("/MyServletNoSolid")
 public class MyServletNoSolid extends HttpServlet {
 private static final long serialVersionUID = 1L;
 	
