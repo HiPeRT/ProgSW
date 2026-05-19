@@ -9,7 +9,7 @@ namespace ConsoleApp
     internal class MyDataType
     {
         private int _id;
-        public string Payload { get; set; }
+        public string Payload { get; set; } = default!;
 
         //public int Id
         //{
@@ -30,6 +30,6 @@ namespace ConsoleApp
         }
 
 
-        public int Return2() { get;} => 2;
+        public int Return2() => 2;
     }
 }
