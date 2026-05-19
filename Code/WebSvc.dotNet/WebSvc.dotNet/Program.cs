@@ -1,41 +1,44 @@
-var builder = WebApplication.CreateBuilder(args);
+using Helpers;
+using Repositories;
+using Services;
 
-// Add services to the container.
-// Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
-builder.Services.AddOpenApi();
-
-var app = builder.Build();
-
-// Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
+namespace WebSvc.dotNet
 {
-    app.MapOpenApi();
-}
+    public class Program
+    {
+        private static void Main(string[] args)
+        {
+            var builder = WebApplication.CreateBuilder(args);
 
-app.UseHttpsRedirection();
+            // Add services to the container.
 
-var summaries = new[]
-{
-    "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-};
+            builder.Services.AddControllers();
 
-app.MapGet("/weatherforecast", () =>
-{
-    var forecast =  Enumerable.Range(1, 5).Select(index =>
-        new WeatherForecast
-        (
-            DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
-            Random.Shared.Next(-20, 55),
-            summaries[Random.Shared.Next(summaries.Length)]
-        ))
-        .ToArray();
-    return forecast;
-})
-.WithName("GetWeatherForecast");
+            builder.Services.AddAutoMapper(cfg => { cfg.AddProfile<AutoMapperProfile>(); });
 
-app.Run();
+            builder.Services.AddScoped<IPersonaService, PersonaService>();
 
-record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
-{
-    public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
+            if (builder.Environment.EnvironmentName == "Local")
+            {
+                builder.Services.AddSingleton<IDb, InMemoryDb>();
+            }
+            else
+            {
+                builder.Services.AddSingleton<IDb, MongoAdapter>();
+            }
+
+
+            var app = builder.Build();
+
+            // Configure the HTTP request pip
+
+            app.UseHttpsRedirection();
+
+            app.UseAuthorization();
+
+            app.MapControllers();
+
+            app.Run();
+        }
+    }
 }
