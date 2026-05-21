@@ -28,8 +28,6 @@ namespace ConsoleApp
             get => _id;
             set => _id = value;
         }
-
-
         public int Return2() => 2;
     }
 }
