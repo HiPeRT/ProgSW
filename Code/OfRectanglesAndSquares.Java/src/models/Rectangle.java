@@ -1,4 +1,5 @@
 package models;
+
 /**
  * This class handles the status of a Rectangle
  */
