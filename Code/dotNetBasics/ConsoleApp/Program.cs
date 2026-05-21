@@ -98,14 +98,14 @@ internal class Program
         Header("Fluent");
 
         // A number of classes from the .NET framework implement a fluent programming interface
-        var sb = new StringBuilder()
+        var str = new StringBuilder()
             .Append("Hello")
             .Append(" ")
             .Append("World")
             .AppendLine("!")
             .ToString();
 
-        Console.WriteLine(sb.ToString());
+        Console.WriteLine(str.ToString());
 
         // This is my own implementation of a possible Autonomous Driving stack builder,
         //  where you can add components to the stack and then run it.
@@ -138,9 +138,9 @@ internal class Program
 
 
         //
-        // 6. Use of list and Linq-to-SQL to traverse them
+        // 6. Usage of lists and Linq to traverse them
         //
-        Header("Linq-to-SQL");
+        Header("Language integrated query (LINQ");
 
         var mylist = new List<MyDataType>()
         {

@@ -72,6 +72,7 @@ namespace ConsoleApp.ADStack
             _controller = component;
             return this;
         }
+        
         /// <summary>
         /// Add interface to vehicle Drive-by-wire. We can have exactly once.
         /// </summary>

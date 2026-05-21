@@ -1,5 +1,8 @@
 ﻿namespace ConsoleApp.ADStack.Models
 {
+    /// <summary>
+    /// Generic AD component
+    /// </summary>
     internal interface IComponent
     {
         /// <summary>
@@ -8,7 +11,7 @@
         void Start();
 
         /// <summary>
-        /// Stop and dispose.
+        /// 
         /// </summary>
         void Stop();
     }
