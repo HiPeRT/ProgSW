@@ -8,14 +8,10 @@
         private int _a;
 
         public MyLambdaInvoker(int a)
-        {
-            _a = a;
-        }
+            => _a = a;
 
         public void Invoke(Action<int> action)
-        {
             // Let's assume that for some business logics, a shall be incremented at every invocation.
-            action(_a++);
-        }   
+            => action(_a++);
     }
 }

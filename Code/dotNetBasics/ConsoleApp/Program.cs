@@ -1,6 +1,7 @@
 ﻿using ConsoleApp;
 using ConsoleApp.ADStack;
 using ConsoleApp.ADStack.Components;
+using System.Reflection.Metadata.Ecma335;
 using System.Reflection.PortableExecutable;
 using System.Text;
 
@@ -90,7 +91,6 @@ internal class Program
         myvisitor.Invoke(
             a => Console.WriteLine($"new Lambda called with {a}")
             );
-
 
         //
         // 5. Fluent programming interface
