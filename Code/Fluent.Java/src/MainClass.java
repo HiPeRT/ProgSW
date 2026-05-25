@@ -55,14 +55,13 @@ public class MainClass {
 		try {
 			PersonFluent p = new PersonFluent()
 				// This is the version where every configuration is passed as param
-				//.Config(true)
+				//.config(true)
 				// This is the version where we have a dedicated PersonCfg object
-				.Config((cfg) -> { cfg.Immutable = true; })
+				.config((cfg) -> { cfg.Immutable = true; })
 				.withName("Paolo")
-				.Persist();
+				.persist();
 	        System.out.println(p);
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		

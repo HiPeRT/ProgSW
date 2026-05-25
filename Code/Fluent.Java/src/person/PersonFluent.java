@@ -56,7 +56,7 @@ public class PersonFluent {
 	 * @return
 	 * @throws Exception
 	 */
-	public PersonFluent Config(Boolean immutable) throws Exception {
+	public PersonFluent config(Boolean immutable) throws Exception {
 		throwIfStatusIsNot(PersonStatus.NEW);
 		
 		this._immutable = immutable;
@@ -74,7 +74,7 @@ public class PersonFluent {
 	 * @return
 	 * @throws Exception
 	 */
-	public PersonFluent Config(ILambdaWithTemplate<PersonCfg> lambda) throws Exception {
+	public PersonFluent config(ILambdaWithTemplate<PersonCfg> lambda) throws Exception {
 		throwIfStatusIsNot(PersonStatus.NEW);
 		
 		// Let the lambda visit my config object
@@ -103,7 +103,7 @@ public class PersonFluent {
 	 * @return
 	 * @throws Exception
 	 */
-	public PersonFluent Persist() throws Exception {
+	public PersonFluent persist() throws Exception {
 		throwIfStatusIsNot(PersonStatus.INITING);
 		
 		// Do something.

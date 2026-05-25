@@ -1,6 +1,7 @@
 ﻿using ConsoleApp;
 using ConsoleApp.ADStack;
 using ConsoleApp.ADStack.Components;
+using ConsoleApp.Person;
 using System.Reflection.Metadata.Ecma335;
 using System.Reflection.PortableExecutable;
 using System.Text;
@@ -135,6 +136,17 @@ internal class Program
 
             // Ok, we can go...and hopefylly don't crash. And If we crash, it's not Fluent's fault!!!
             .Run();
+
+
+        // This is the Persona exercise
+        PersonFluent p = new PersonFluent()
+            // This is the version where every configuration is passed as param
+            //.Config(true)
+            // This is the version where we have a dedicated PersonCfg object
+            .Config((cfg) => { cfg.Immutable = true; })
+			.WithName("Paolo")
+            .Persist();
+        Console.WriteLine(p);
 
 
         //
