@@ -1,6 +1,7 @@
 import adstack.ADStackComposer;
 import adstack.IncoherentStackException;
 import adstack.components.*;
+import person.PersonFluent;
 
 public class MainClass {
 
@@ -47,6 +48,21 @@ public class MainClass {
 			    .run();
 			
 		} catch (IncoherentStackException e) {
+			e.printStackTrace();
+		}
+        
+        // This is the Persona exercise
+		try {
+			PersonFluent p = new PersonFluent()
+				// This is the version where every configuration is passed as param
+				//.Config(true)
+				// This is the version where we have a dedicated PersonCfg object
+				.Config((cfg) -> { cfg.Immutable = true; })
+				.withName("Paolo")
+				.Persist();
+	        System.out.println(p);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		
